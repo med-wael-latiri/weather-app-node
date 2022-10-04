@@ -5,7 +5,7 @@ const forecast = (lantitude, longitude, callback) => {
     lantitude +
     "&lon=" +
     longitude +
-    "&appid=5ca49316ce8de9ee889cfd9e1b75d847&units=metric&lang=fr";
+    "&appid=5ca49316ce8de9ee889cfd9e1b75d847&units=metric&lang=eng";
   request({ url, json: true }, (error, { body }) => {
     if (error) {
       callback("unable to connect");
