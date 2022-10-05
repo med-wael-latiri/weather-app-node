@@ -15,7 +15,8 @@ const forecast = (lantitude, longitude, callback) => {
       callback(
         undefined,
         body.weather[0].description +
-          ` It is currently ${body.main.temp} degree with a humidity of ${body.main.humidity} the lowest temperature today was ${body.main.temp_min} degrees and the highest temperature today was ${body.main.temp_max} degrees
+          ` It is currently ${body.main.temp} degree with a humidity of ${body.main.humidity}.  
+           the lowest temperature today was ${body.main.temp_min} degrees and the highest temperature today was ${body.main.temp_max} degrees
           the wind speed is ${body.wind.speed} `
       );
     }
